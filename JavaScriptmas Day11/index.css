@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background:url('https://www.clearias.com/up/India-Switzerland-Relations-1.jpg');
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: end;
+    padding-bottom: 2rem;
+}
+.shadow{
+    position: absolute;
+    box-shadow: 10px 10px 10px rgb(255, 0, 0);
+    width: 800px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    filter: blur(30px);
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 10%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    background-color: rgb(255, 0, 0);
+    border-radius: 4px;
+    box-shadow: 0px 18px 50px 0px rgb(0, 0, 0);
+}
+
+.grid-container > div:nth-child(8),
+.grid-container > div:nth-child(12),
+.grid-container > div:nth-child(13),
+.grid-container > div:nth-child(14),
+.grid-container > div:nth-child(18),
+.grid-container > div:nth-child(8){
+    background-color: rgb(255, 255, 255)!important;
+}
+
+.indian{
+    display: grid;
+    grid-template-columns:350px;
+    grid-template-rows:repeat(3,80px) ;
+    padding: 0;
+
+}
+.indian >div:nth-child(1){
+background-color: orange!important;
+}
+.indian >div:nth-child(3){
+    background-color: green!important;
+    }
+    .indian >div:nth-child(2){
+        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/640px-Ashoka_Chakra.svg.png');
+        background-size: 70px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: aliceblue;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background:linear-gradient(0deg,rgb(163, 201, 252),rgb(206, 197, 197));
+        margin-bottom: -20px;
+        padding-inline: 2rem;
+        padding: 1rem 2rem;
+    }
+    .about{
+        padding: 1rem;
+       
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        margin-top: 1rem;
+        padding-inline: 1rem;
+    }
