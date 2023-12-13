@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Picker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <div class="container">
+            <div class="mobile">
+                <div class="logo-container">
+                    <p class="logo"><img src="romantic-dinner.png" alt="">foodie</p>
+                    <img src="man.png" alt="">
+                </div>
+        <h1> Pick Your Christmas Dinner </h1>
+        <img src="https://www.tastingtable.com/img/gallery/as-a-dinner-party-host-should-you-always-sit-at-the-head-of-the-table/intro-1680287895.jpg" alt="">
+        <!-- <p class="result" id="result">Your ideal Christmas dinner is <span id="food">...</span></p> -->
+        <form>
+            <label for="name">How many guests are coming?</label>
+            <input id="num-input" type="number" min="1" name="guests">
+            <div class="veggie">
+                <input type="checkbox" id="vegetarian-input"  name="vegetarian" checked>
+                <label class="pointer" for="vegetarian-input">Vegetarian?</label>            
+            </div>
+            <dialog id="dialog1">
+                 <div><img class="pointer" src="cross.png" onclick="closeDialog()" alt=""></div>
+                    
+
+                <img src="https://media.istockphoto.com/id/1386973628/vector/yummy-smile-emoji-with-tongue-lick-mouth-delicious-tasty-food-symbol-for-social-network.jpg?s=612x612&w=0&k=20&c=F9BaxYi1RY9vdBqIjWO0soXR6XhsWZdgxbjpfMqej5M=" alt="">
+                <span> Your ideal Christmas dinner for <span>13</span> is...</span>
+
+                <h1 id="dish-name"> Chowmein </h1>
+                <div class="logo-container">
+                    <button type="button" id="view" onclick="showReceipe()">View Receipe</button>
+                    <button id="order">Order</button>
+
+                </div>
+            </dialog>
+            <button onclick="showDialog()" id="btn" type="button">Calculate</button>
+        </form>
+    </div>
+    <div>
+        <img class="embed" src="receipe.png">
+    </div>
+
+       
+            
+    </div>
+        <script src="index.js"></script>
+    </body>
+</html>
