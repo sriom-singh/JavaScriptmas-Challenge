@@ -1,0 +1,104 @@
+:root {
+    --wine-red: #C7375F;
+    --bright-red: #D42D2F;
+    --dark-green: #344D2F;
+    --light-green: #77A047;
+    --gold: #FAC57D;
+    --snow: #F0F4F7;
+  }
+  
+  html, body {
+      margin: 0;
+      padding: 0;
+  }
+  
+  body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      color: var(--dark-green);
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgb(13, 176, 252) 40%,rgb(250, 186, 186));
+      background-size: cover;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .elf-hangout-zone {
+      /* Limit the number of elves to 6 per row. */
+      /* Make sure that the elves stay in the elf hangout zone, 
+      no matter how many there are. */
+      display: flex;
+      justify-content: center;
+      align-items:  center;
+      margin: 2em;
+      flex-direction: column;
+      width: 400px;
+      height:400px ;
+      background-repeat: no-repeat;
+      padding: 1em 2em;
+    
+      background-image: linear-gradient(rgb(224, 224, 224),rgb(240, 163, 163));
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  h1 { 
+      margin: 0;
+      color: black;
+  }
+  
+  .elf {
+    width: 100%;
+      font-size: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items:center ;
+      justify-content: center;
+  }
+  .elf img{
+    width: 16.5%;
+    border-bottom: 1px solid gray;
+   
+  }
+  
+  button {
+      padding: 1em 2em;
+      border: none;
+      font-size: 1.2rem;
+      background-color: fuchsia;
+      color: var(--snow);
+      border-radius: 999px;
+      box-shadow: rgb(100, 100, 100) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  .animate{
+    animation: move 10s 4s ease-in-out  infinite ;
+  }
+  button:hover {
+      cursor: pointer;
+      transform: scale(1.03)
+  }
+
+  /* @keyframes move {
+    0%{
+        transform: translate(100px);
+    }
+    10%{
+        transform: translateX(10px);
+    }
+    30%{
+        transform: translateY(100px);
+    }
+    60%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateY(-100px);
+
+    }
+  } */
