@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: url('https://assets.change.org/photos/2/ml/ky/zZMlKYrldDaOyfS-800x450-noPad.jpg?1680634831');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+.outer-1{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    animation: move 8s alternate-reverse infinite ;
+}
+
+.outer-2{
+    width: 385px;
+    height: 385px;
+    border-radius: 50%;
+    background-color: skyblue;
+    display: grid;
+    place-items: center;
+}
+.outer-3{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    place-items: center;
+}
+.inner{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgb(238, 255, 0);
+    display: grid;
+    place-items: center;
+    font-size: 0.5rem;
+    font-weight: 700
+}
+.hr1{ width: 50%;
+    position: absolute;
+    background-color:rgb(133, 53, 53);
+    height: 20px;
+    z-index: -1;
+    border-radius: 20px;
+    border: none;
+    box-shadow:inset 0 0 10px black;
+}
+
+span{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+@keyframes move {
+    0%{
+        transform: translateX(-90%);
+    }
+    100%{
+        transform: translateX(90%);
+    }
+}
+.hr2{ 
+    width: 30%;
+    position: absolute;
+    background-color:rgb(92, 92, 92);
+    height: 20px;
+    z-index: -1;
+    border: none;
+    box-shadow:inset 0 0 10px black;
+    transform: rotateZ(80deg);
+    bottom: 100px;
+    z-index: -5;
+    right: 200px;
+}
+.hr3{ 
+    width: 30%;
+    position: absolute;
+    background-color:rgb(92, 92, 92);
+    height: 20px;
+    z-index: -1;
+    border: none;
+    box-shadow:inset 0 0 10px black;
+    transform: rotateZ(100deg);
+    left: 200px;
+    bottom: 100px;
+    z-index: -5;
+}
