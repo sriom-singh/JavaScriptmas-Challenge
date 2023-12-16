@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+                <div class="all">
+                    <ul class=" list all-list"> 
+                        <li><h1>All Names</h1></li>
+                        <hr>
+                    </ul>
+                </div>
+
+
+                <div class="nice"> <ul class=" list nice-list" id="nice-list"> 
+                    <li><h1>Naughty List</h1></li>
+                    <hr>
+                </ul>
+                </div>
+                <div class="naughty"> <ul class=" list naughty-list" id="naughty-list">
+                    <li><h1>Nice List</h1></li>
+                    <hr>
+                </ul>
+                </div>
+                
+            </div>
+            <div class="btn-container">
+                <button id="btn-add" onclick="openInput()" type="button">Add</button>
+                <button id="btn-sort" onclick="sortItem()" type="button">Sort</button>
+                <!-- <button id="btn-delete" onclick="deleteItem()" type="button">Delete</button> -->
+
+            </div>
+            <div class="add">
+                <label for="">
+                <input type="text"  autocomplete="off" id="name" placeholder="Enter name">
+           <span  onclick="addItem()">Add</span>   </label>
+            </div>
+        <script src="index.js"></script>
+    </body>
+</html>

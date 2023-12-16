@@ -1,0 +1,131 @@
+:root {
+    --wine-red: #C7375F;
+    --bright-red: #D42D2F;
+    --dark-green: #344D2F;
+    --light-green: #77A047;
+    --gold: #FAC57D;
+    --snow: #F0F4F7;
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+      margin: 0;
+      padding: 0;
+  }
+  
+  body {
+    width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: var(--dark-green);
+      background: url("pngtree-santa-claus-created-with-the-help-of-a-tablet-pc-in-a-composite-image-photo-image_20467950.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #000000;
+  }
+  
+ h1{
+    font-size: 25px;
+    color: rgb(255, 254, 254);
+    margin-bottom: 1rem;
+ }
+  
+  .container {
+        width: 500px;
+        height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items:  center;
+      flex-direction: row;
+      transform: rotateZ(-7deg);
+        margin-top: 25px;
+
+  }
+  .nice,.naughty{
+    display: none;
+  }
+  .list {
+      margin: 0 1em 1em;
+      flex-direction: column;
+      padding: 1em;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      color: var(--snow);
+      list-style-type: none;
+  }
+  .all-list{
+    background-color: #023b46;
+  }
+  .nice-list {
+      background: var(--dark-green);    
+  }
+  li{
+    padding-bottom: 10px;
+  }
+  .naughty-list {
+      background: var(--wine-red);
+  }
+  
+  button {
+    margin-left: 50px;
+    /* transform: rotateZ(-6deg); */
+      padding: 1em 2em;
+      border: none;
+      font-size: 1.2rem;
+      background-color: var(--gold);    
+      color: var(--dark-green);
+      font-weight: 700;
+      border-radius: 999px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  button:hover {
+      cursor: pointer;
+      transform: scale(1.03)
+
+  }
+  .btn-container{
+    display: flex;
+    transform: rotateZ(-7.7deg);
+
+  }
+
+  hr{
+    margin-bottom: 15px;
+  }
+
+  input{
+    border: 1px solid gray;
+    padding: 0.5rem;
+    outline: none;
+  }
+  .add-btn{
+    width: 100px;
+    height: 10px;
+    font-size:8px;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    background-color: #C7375F;
+  }
+  label{
+    position: absolute;
+     transform: rotateZ(-7.7deg);
+    bottom:190px;
+    font-size:12px;
+    padding-right: 10px;
+    left: 580px;
+    background-color: #d4992d;
+    cursor: pointer;
+  }
+
+  .add{
+    display: none;
+  }
