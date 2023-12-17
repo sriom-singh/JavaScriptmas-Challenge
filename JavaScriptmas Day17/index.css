@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: url('https://media.newyorker.com/photos/59097e19ebe912338a378bda/master/w_2560%2Cc_limit/strachey-love-letter_WP.jpg');
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+.container{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    color: rgb(0, 0, 0);
+    background-color:skyblue;
+    padding-inline-start: 10px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    font-size:50px;
+    font-weight: normal;
+}
+h1::after
+{   margin-left: 5px;
+    content: " Dogs";
+    background-color: rgb(255, 251, 0);
+    animation: change  infinite linear 8s ;
+    padding-inline: 10px;
+
+}
+
+@keyframes change
+{
+    0%{
+        content: "Scrimba";
+    }
+    25%{
+        content: "Nature";
+    }
+    50%{
+        content: "Myself";
+
+    }
+    75%{
+        content: "coding";
+
+    }
+    100%{
+        content: "Web Development";
+    }
+    
+}
