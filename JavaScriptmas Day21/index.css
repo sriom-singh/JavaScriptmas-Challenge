@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+width: 100vw;
+    height: 100vh;
+    background:url(https://scrimba.com/static/art/scrimba-og-image.png);
+    
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --search-border: #bbb;
+    --search-focus-border: #3a71ca;
+}
+input{
+    width: 100px;
+    height: 40px;
+    border:1px solid var(--search-border);
+    outline: none;
+    border-radius: 5px;
+    padding-inline: 10px;
+    transition: all 0.4s;
+}
+input:focus{
+    width: 300px;
+    color: rgb(0, 0, 0);
+    border:2px solid var(--search-focus-border);
+    box-shadow: 0 0 5px  var(--search-focus-border),
+    0 0 10px  gray;
+}
+
+/* input::placeholder{
+    color: black;
+} */
+
+input:focus::placeholder,
+input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+
+ul{
+    display: flex;
+    color: rgba(0, 0, 0, 0.712);
+    font-weight: 700;
+    font-size: 1.2rem;
+    align-items: center;
+}
+li{
+    list-style: none;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    justify-content: space-between;
+}
+ul:first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    max-width: 200px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+button{
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 1.2rem ;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+}
