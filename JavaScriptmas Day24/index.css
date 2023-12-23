@@ -1,0 +1,161 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(—Pngtree—pine\ branch\ gift\ fireplace\ christmas_13638430.png);
+    display: flex;
+    background-size: contain;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+section {
+    max-width: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.star{
+    top: 60px;
+    left: 108px;
+    font-size: 2em;
+    position: absolute;
+}
+
+.lights {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.lights:nth-child(3) {
+    top: 118px;
+    left: 95px; 
+}
+.lights:nth-child(4) {
+    top: 118px;
+    left: 135px; 
+}
+.lights:nth-child(5) {
+    top: 172px;
+    left: 70px; 
+}
+.lights:nth-child(6) {
+    top: 180px;
+    left: 165px; 
+}
+.lights:nth-child(7) {
+    top: 230px;
+    left: 50px; 
+}
+.lights:nth-child(8) {
+    top: 223px;
+    left: 175px; 
+}
+.lights:nth-child(9) {
+    top: 280px;
+    left: 40px;
+
+}
+.lights:nth-child(10) {
+    top: 280px;
+    left: 190px;
+}
+.lights:nth-child(11) {
+    top: 150px;
+    left: 120px;
+}
+.lights:nth-child(12) {
+    top: 200px;
+    left: 120px;
+}
+.lights:nth-child(13) {
+    top: 250px;
+    left: 120px;
+}
+.lights:nth-child(14) {
+    top: 290px;
+    left: 120px;
+}
+
+.red {
+    background: radial-gradient(circle at 65% 15%, white 1px, #FF3131 30%, darkred 60%, aqua 100%); 
+    filter: brightness(0.8);
+}
+
+.blue {
+    background: radial-gradient(circle at 65% 15%, white 1px, aqua 30%, darkblue 60%, aqua 100%); 
+    filter: brightness(0);
+}
+
+.lights-on {
+    filter: unset;
+}
+#star{
+    filter: brightness(0);
+}
+
+.dance{
+    width: 500px;
+    position: absolute;
+    bottom: 10px;
+    left: 440px;
+}
+.dance2{
+    width: 200px;
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+}
+.dance3{
+    width: 200px;
+    position: absolute;
+    bottom: 200px;
+    right: 240px;
+}
+.dj{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FF3131;
+    opacity: 0.2;
+    box-shadow: 10px 10px 100px red;
+    animation: dj-light infinite linear 0.4s ;
+    z-index: 100;
+
+}
+.dj2{
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    right: 0;
+    background-color: #6831ff88;
+    opacity: 0.2;
+    transform: rotate(10deg);
+    animation: dj-light infinite linear 0.4s ;
+}
+@keyframes dj-light {
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+
+h1{
+    position: absolute;
+    top: 100px;
+    font-size: 3rem;
+    left: 500px;
+    color: rgb(255, 255, 81);
+}
