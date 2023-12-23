@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(100, 100, 100);
+}
+input{
+    visibility: hidden;
+}
+.toggle-switch{
+    width: 120px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-inline: 4px;
+    transition:all ease-in-out;
+    box-shadow: inset  0px 2px 10px rgba(46, 46, 46, 0.753),
+    0px 2px 10px rgba(49, 49, 49, 0.753);
+    background-color: rgb(253, 200, 101);
+    transition: all 0.2s;
+    cursor:pointer;
+}
+
+.toggle-switch::before{
+    content: '';
+    background-repeat: no-repeat;
+    background: url(summer.png);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    position: relative;  
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#toggle:checked + .toggle-switch {
+    justify-content: flex-end;
+    background-color: #000;
+
+ 
+}
+#toggle:checked + .toggle-switch::before{
+    background: url(night.png);
+    background-size: contain;
+    background-position: center;
+}
